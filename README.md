@@ -51,7 +51,7 @@ was used to schedule the embedding and modeling.
 
 - Model evaluation
 The models were evaluated for performance and also tested with
-random words
+random mail messages
 
 
 

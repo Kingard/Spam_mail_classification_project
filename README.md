@@ -24,6 +24,8 @@ can be integrated as a spam filter.
 * Requests
 * Pipeline
 * TF-IDF
+* Flask
+* Pickle
 
 
   
@@ -49,9 +51,28 @@ punction marks are distributed in spam (unwanted mails) and ham
 The text was vectorized using `TF-IDF` and the `Pipeline` library
 was used to schedule the embedding and modeling.
 
+
 - Model evaluation
 The models were evaluated for performance and also tested with
 random mail messages
+
+
+- Created a Flask app for the model: This is contained in the ` app.py` file
+
+
+- the model was created in the `model.py` file and with the help of the `pickle`
+module I was able to serialize the model in the `model.pkl` file.
+
+
+I served the app on the web via the [localhost:500](127.0.0.1:5000/)
+
+The URLs for the app contained in the `templates` folder:
+
+home page: [127.0.0.1:5000/](127.0.0.1:5000/)
+
+prediction function: [127.0.0.1:5000/predict](127.0.0.1:5000/predict)
+
+
 
 
 
